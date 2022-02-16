@@ -1,10 +1,13 @@
+//import express server and createserver from respective packages
 import express from 'express';
 import {Server} from 'socket.io';
 import {createServer} from 'http';
 
+//declaring constants to use further ahead
 const app = express();
 const httpServer = createServer(app);
 const port = process.env.PORT || 3000;
+
 
 const io = new Server(httpServer, {
     cors: {
@@ -40,6 +43,6 @@ io.on('connection', (socket)=>{
     socket.on('USER_TYPING', (data)=>{
 
         io.emit('SOMEONE_TYPING', data);
-        
+
     })
 })
