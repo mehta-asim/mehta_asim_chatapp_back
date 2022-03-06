@@ -1,0 +1,25 @@
+{
+  "name": "mehta_asim_chatapp_back",
+  "version": "1.0.0",
+  "description": "This repository is to showcase the BackEnd of the Chat App for Authoring 4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehta-asim/mehta_asim_chatapp_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehta-asim/mehta_asim_chatapp_back/issues"
+  },
+  "homepage": "https://github.com/mehta-asim/mehta_asim_chatapp_back#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1"
+  }
+}
